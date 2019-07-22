@@ -20,7 +20,10 @@
         <service
             android:name=".ProxyService"
             android:enabled="true"
-            android:exported="true" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="vendor.gl.proxyservice.ProxyService" />
+            </intent-filter>
+        </service>
     </application>
-
 </manifest>
